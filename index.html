@@ -6,33 +6,42 @@
 <body>
 
 <script type="text/javascript">
-var max =100;
-var min = 1;
+var max = 100;
+var min = 0;
+var maxk = 100;
+var mink = 0;
 var atmpt = 0;
 var g = 0;
 var gamemode = 0;
 function NewGame() {
-max = 100;
-min = 1;
+max = parseFloat(document.getElementById('maxx').value);
+min = parseFloat(document.getElementById('minn').value);
+<!-- max = maxk; -->
+<!-- min = mink; -->
+<!-- for some reason the code commented out doesn't work does not work-->
+<!-- useing the 2 lines below for the time being -->
+maxk = parseFloat(document.getElementById('maxx').value);
+mink = parseFloat(document.getElementById('minn').value);
 atmpt = 0;
 gamemode = 1;
 document.getElementById('gues').innerHTML=atmpt;
 Guess();
 }
 function Guess() {
+anticheat = Math.round(1.322549599*Math.pow((maxk-mink), 0.3956096243)+1); <!-- I can't find an equasion that appropriatly scales so anticheat is somewhat lenient -->
 if (gamemode == 0) {
-document.getElementById('outp').innerHTML="Dude, You gotta click Start Game first";
-} else if (atmpt == 8) {
+document.getElementById('outp').innerHTML="Dude, Change your bounds and click Start Game";
+} else if (atmpt == anticheat) {
 gamemode = 0;
 document.getElementById('outp').innerHTML="Something tells me you are not being honest with me";
 } else {
-g = Math.floor(min+((max-min)*.5)); 
+g = Math.round(min+((max-min)*.5)); 
 atmpt = (atmpt + 1);
 document.getElementById('outp').innerHTML="Is Your Number: " +g+"?";
 document.getElementById('gues').innerHTML=atmpt;
 }}
 function debug() {
-document.getElementById('debug').innerHTML=min+" "+max+" "+atmpt;
+document.getElementById('debug').innerHTML="min: "+min+" max: "+max+" atmpt: "+atmpt+" anticheat: "+anticheat;
 }
 function toohigh() {
 max = g;
@@ -53,12 +62,12 @@ document.getElementById('outp').innerHTML="Just click Start Game";
 
 <div style="text-align:center">
 <h1>Number Guesser</h1> <br>
-<p>Pick a Number between 1 and 100 and I will try to guess is</p>
+<p>Choose your range: Min:<input type="text" size=4 id="minn" value="0"> (excluded) Max:<input type="text" id="maxx" size=5 value=100> (included) <p>
 <button onclick="NewGame();">Start Test</button> <br>
 <button onclick="toolow();">Too Low</button>
 <button onclick="win();">Correct</button>
 <button onclick="toohigh();">Too High</button><br>
-<!-- <button onclick="debug();">Debug</button> -->
+ <button onclick="debug();">Debug</button> 
 <div>Number of Guesses:</div> <div id="gues">0</div>
 <hr>
 <div id="outp"></div>
