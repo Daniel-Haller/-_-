@@ -28,7 +28,7 @@ document.getElementById('gues').innerHTML=atmpt;
 Guess();
 }
 function Guess() {
-anticheat = Math.round(1.322549599*Math.pow((maxk-mink), 0.3956096243)+1); <!-- I can't find an equasion that appropriatly scales so anticheat is somewhat lenient -->
+anticheat = Math.round(1.322549599*Math.pow((maxk-mink), 0.3956096243)+1); <!-- I can't find an equation that appropriatly scales so anticheat is somewhat lenient -->
 if (gamemode == 0) {
 document.getElementById('outp').innerHTML="Dude, Change your bounds and click Start Game";
 } else if (atmpt == anticheat) {
