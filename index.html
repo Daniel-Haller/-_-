@@ -18,8 +18,8 @@ max = parseFloat(document.getElementById('maxx').value);
 min = parseFloat(document.getElementById('minn').value);
 <!-- max = maxk; -->
 <!-- min = mink; -->
-<!-- for some reason the code commented out doesn't work does not work-->
-<!-- useing the 2 lines below for the time being -->
+<!-- for some reason the code commented out doesn't work-->
+<!-- using the 2 lines below for the time being -->
 maxk = parseFloat(document.getElementById('maxx').value);
 mink = parseFloat(document.getElementById('minn').value);
 atmpt = 0;
@@ -28,9 +28,9 @@ document.getElementById('gues').innerHTML=atmpt;
 Guess();
 }
 function Guess() {
-anticheat = Math.round(1.322549599*Math.pow((maxk-mink), 0.3956096243)+1); <!-- I can't find an equation that appropriatly scales so anticheat is somewhat lenient -->
+anticheat = Math.round(1.322549599*Math.pow((maxk-mink), 0.3956096243)+1); <!-- I can't find an equation that appropriately scales so anticheat is somewhat lenient -->
 if (gamemode == 0) {
-document.getElementById('outp').innerHTML="Dude, Change your bounds and click Start Game";
+document.getElementById('outp').innerHTML="Dude, change your bounds and click Start Game";
 } else if (atmpt == anticheat) {
 gamemode = 0;
 document.getElementById('outp').innerHTML="Something tells me you are not being honest with me";
