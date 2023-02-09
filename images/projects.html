@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Daniel Haller Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="icon" type="image/x-icon" href="images/pikah.png">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body style="background-color:rgb(241, 241, 241);">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Daniel Haller Projects <b>|</b></a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Main</a>
+      <a href="projects.html" class="w3-bar-item w3-button">|</a>
+      <a href="#Java" class="w3-bar-item w3-button">Java</a>
+      <a href="#AI" class="w3-bar-item w3-button">Data Analysis</a>
+      <a href="#Games" class="w3-bar-item w3-button">Video Games</a>
+      <a href="#Music" class="w3-bar-item w3-button">Music</a>
+      <a href="#Videos" class="w3-bar-item w3-button">Videos</a>
+      <a href="#Db" class="w3-bar-item w3-button">Databases</a>
+      <a href="#web" class="w3-bar-item w3-button">Web</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px;background-color:rgba(148, 219, 255, 0.25);" id="home">
+  <img class="w3-image" src="images/head.png" alt="Interesting Header Image" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <!--h1 class="w3-xxlarge">Le Placeholder</h1-->
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- Intro -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m7 w3-padding-large">
+      <p><h1>Guide</h1></p>
+      <table class="w3-table w3-padding-large" border="1px"  style="background-color:rgba(148, 219, 255, 0.25);">
+        <tr>
+          <td><a href="#Java" class="w3-button2">Java Checkers</a></td>
+          <td><a href="#AI" class="w3-button2">Data Analysis</a></td>
+          <td><a href="#Games" class="w3-button2">Game Development</a></td>
+          <td><a href="#Music" class="w3-button2">Produced Music</a></td>
+        </tr>
+        <tr>
+          <td><a href="#Videos" class="w3-button2">Produced Videos</a></td>
+          <td><a href="#Db" class="w3-button2">Database Work</a></td>
+          <td><a href="#web" class="w3-button2">HTML Pages</a></td>
+          <td><a href="index.html" class="w3-button2">This Website</a></td>
+        </tr>
+
+      </table>
+    </div>
+
+    <div class="w3-col m4 w3-padding-large">
+      <!--<h5 class="w3-center">Yes this is based off of a template, I don't program in web formats very much</h5>-->
+      <div class="w3-large">I consider myself somewhat of a pocketknife in terms of my skills. 
+        By that, I mean my skillset is well rounded in a variety of fields. 
+        I love working on different projects, and that often leads me to pickup new skills in the process. 
+        On this page you’ll find a collection of my works and accomplishments, all of which I am proud of.
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+
+  <!-- Java Checkers -->
+  <div class="w3-row w3-padding-64" id="Java">
+    <div class="w3-col m6 cust-padding w3-hide-small" style="background-color:rgba(148, 219, 255, 0.25);">
+      <img src="images/Che_00.png" class="w3-round-large w3-image-border" alt="Intro Screen of Featured Project" width="600"> <hr>
+      <img src="images/Che_01.png" class="w3-round-large w3-image-border" alt="Gameplay Screen of Featured Project" width="600"> <hr>
+      <img src="images/Che_02.png" class="w3-round-large w3-image-border" alt="Game Over Screen of Featured Project" width="600">
+    </div>
+
+    <div class="w3-col m6 w3-padding-small w3-large">
+    <h1>Java Checkers<br></h1>
+    <p width="100">
+      This project was designed to apply the coding techniques we’ve learned in our Java class to a practical and functional program. 
+      I worked with a team of 2 other students to design and develop a playable game of checkers using Java and JavaFX. 
+    </p>
+    <p>
+      The goal of our project was to develop a stable and working version of checkers, then provide other features based on our knowledge of Java. 
+      This highlighted the use of methods and object-oriented programming to simulate actions in checkers. 
+    </p>
+    <p>
+      The project was developed over a couple of months during the covid 19 epidemic which resulting in face to face meetings as a team being prohibited. 
+      Considering the fact most if not all of our college studies were moved to an online format, our team had to not only adapt to learning in a new environment, 
+      but also collaborating in one as well. 
+    </p>
+    <p>
+      The features of the project include a completely playable game of checkers with an end screen, restart board screen, and save and load features. 
+      The game has no network or online connectivity and is meant to be played on one solo machine. There is also no AI present in the program. 
+      Lastly, there’s debug options labeled “God Powers” and a options to change the layout of the program.
+    </p>
+    <p>
+      Specifically, I worked on:
+    </p>
+    <p>
+      <ul>    
+        <li>Designing the GUI and Layout options</li>
+        <li>Programming the Timers</li>
+        <li>Saving and Loading the program</li>
+      </ul>
+    </p>
+    <p>
+      Throughout the project each of us were learning more about java as the project was being developed.
+      This resulted in much of the code being outdated or changed as the semester progressed. 
+      I know of some errors in the code that were unable to be resolved before the deadline of our project and I learned a lot in working on this program. 
+      If I were to redo this program again, I would make a lot of changes to the initial design, function, and code structure. 
+    </p>
+    </div>
+    </div>
+
+<hr>
+
+  <!--  Data Analysis-->
+  <div class="w3-container w3-padding-64" id="AI">
+    <div class="m6 w3-padding-large w3-large" style="align-items: center;">
+      <h1>Data Analysis </h1>
+      <p>In my studies one subject I’ve often explored is data analysis through the preprocessing and post processing of data. 
+        Currently I’ve done 2 different semester-long projects that fall under this category:</p>
+        <p>
+          <ul>   
+            <li> Speech Recognition AI:</li>
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              Attached is a copy of the final report of our work and the source code on google colab where you can see the bot in action. 
+            </div>
+
+            <li>Tornado Prediction:</li> 
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                Attached is a copy of the final report of our work. There is no source code available because the report includes our graphs and results. 
+              </div>
+
+              <p>I love to talk about these projects because they were fun and insightful, but both projects speak for themselves pretty well.</p>
+          </ul>
+        </p>
+
+        <div class="m6 cust-padding w3-hide-small" style="background-color:rgba(148, 219, 255, 0.25);">
+          <table class="w3-table" >
+            <tr>
+              <td style="text-align: center;"><h2>Speech Recognition AI</h2></td>
+              <td style="text-align: center;"><h2>Tornado Prediciton</h2></td>
+            </tr>
+            <tr>
+              <td><h4>Abstract</h4>
+                <div>
+                  We proposed creating an artificial intelligence agent that would be able to recognize vocal commands from an external source. 
+                  The agent would be trained on a set of spoken words, a dict data type with an audio file and a label stating the word spoken. 
+                  Once trained, the agent should be able to pick a word from a list of labels that is most similar to the sound given to the agent.
+                </div>
+              </td>
+              <td><h4>Summary</h4>
+                <div>
+                  In this report we will take our knowledge gained from datamining to apply the research tactics 
+                  and organizational techniques to tornado data collected in the United States and through the National Oceanic and Atmospheric Administration (NOAA). 
+                  Through an analysis of the data, we can search for correlations between the different tornado attributes and develop classifiers 
+                  that can predict further attributes of tornadoes given our data.
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align: middle;">
+              <img src="images/SoundData.PNG" class="w3-round w3-image w3-opacity-min" alt="Something related to Speech" width="600" height="750">
+              </td>
+              <td>
+                <img src="images/Tornado_Heatmap.png" class="w3-round w3-image w3-opacity-min" alt="Something related to Storms" width="600" height="750">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="files/Voice Recognition AI Final Report.pdf" class="w3-bar-item w3-button" target="_blank"><u>Link to Voice Recognition Report</u></a>
+                <a href="https://colab.research.google.com/drive/1DHtPtOiPaWRTUTduEPbFcSeEWJFMh11Z?usp=sharing" class="w3-bar-item w3-button" target="_blank"><u>Link to Source Code</u></a>
+              </td>
+              <td>
+                <a href="files/Tornado Prediction Project Report.pdf" class="w3-bar-item w3-button" target="_blank"><u>Link to Tornado Prediction Report</u></a>
+              </td>
+            </tr>
+          </table>
+        </div>
+    </div>
+  </div>
+  <hr>
+
+  <!--Video Games-->
+  <div class="w3-container w3-padding-64" id="Games">
+    <div class="m6 w3-padding-large" style="align-items: center;">
+      <h1>Video Games</h1>
+      <div class="w3-large">
+        Video Games as a technology showcase complex programs that also incorporate many different disciplines aside from computer science. 
+        These projects are a great way for me to express creativity and learn new skills. Though, due to my knowledge of programming and computer architecture, 
+        my programs often feature an emphasis on the programming of the project. 
+      </div>
+      <p class="w3-large">
+        Each game has its own dedicated webpage on a separate site where the game can be played. 
+        Therefore only a small snippet of the game will be provided here. 
+      </p>
+      <table class="w3-table">
+        <tr>
+          <td>
+          <iframe src="https://itch.io/embed/1875154?bg_color=aaeebf&amp;fg_color=54456a&amp;link_color=e3a2f7&amp;border_color=7da0ac" width="552" height="167" frameborder="0">
+            <a href="https://dankdekuskrub.itch.io/keirnels-quest">Keirnel's Quest by DankDekuSkrub</a>
+          </iframe>
+          </td>
+          <td class="w3-text-grey" style="vertical-align: middle;">
+            A single level 3D platformer made in Unreal Engine 4. An opened world with lots to discover. Must download to play (Windows Only)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <iframe src="https://itch.io/embed/1537624?bg_color=2e7c7c&amp;fg_color=94c9c9&amp;link_color=fff12f&amp;border_color=222222" width="552" height="167" frameborder="0">
+              <a href="https://dankdekuskrub.itch.io/heart-and-home">Heart and Home by DankDekuSkrub</a>
+            </iframe>
+          </td>
+          <td class="w3-text-grey" style="vertical-align: middle;">
+            An adventure game with secrets to find and puzzles to solve. Playable on the website. 
+          </td>
+        </tr>
+      </table>
+
+      <h2>Game Jam Game</h2>
+      <p class="w3-large">These games are special because instead of being completed over the course of a couple months, 
+        they were completed in a weekend (48 hours) under strict deadlines. 
+      </p>
+      <table class="w3-table" border="1px">
+        <tr>
+          <td>
+            <a href="https://globalgamejam.org/2022/games/grimalkin-3" target="_blank">
+              <img src="images/Gri.png" class="w3-round w3-image" alt="Grimalkin Splash">
+            </a>
+          </td>
+          <td class="w3-text-grey" style="vertical-align: middle;">
+            <div>
+              2 player game where one person leads another through a confusing world with an out of game map. 
+              Must <a href="https://globalgamejam.org/2022/games/grimalkin-3" target="_blank">download</a> to play. (Windows Only)
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://globalgamejam.org/2023/games/peachs-pilgrimage-1" target="_blank">
+              <img src="images/peach.png" class="w3-round w3-image" alt="A Peacah's Pilgrimae Splash">
+            </a>
+          </td>
+          <td class="w3-text-grey" style="vertical-align: middle;">
+            <div>
+              A physics based side scroller where you play as a rolling peach in a side-scrolling adventure.
+              Works in a browser but better if you <a href="https://globalgamejam.org/2023/games/peachs-pilgrimage-1" target="_blank">download</a>
+              the game for Windows. (Web or Windows)
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p style="text-align: center;">A Peach's Pilgrimage is also avalible up on Itch.io</p>
+      <div style="text-align: center;">
+        <iframe src="https://itch.io/embed/1913819?bg_color=ffcc94&amp;fg_color=7f3b0b&amp;link_color=76bd5f" width="552" height="167" frameborder="0">
+          <a href="https://dankdekuskrub.itch.io/a-peachs-pilgrimage">A Peach's Pilgrimage by DankDekuSkrub, maryb197</a>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!--Begin Music-->
+  <div class="w3-row w3-padding-64" id="Music">
+    <div class="w3-col m7 w3-padding-large w3-large">
+      <h1>Music</h1>
+      <p>I’ve made a couple of tracks at my time at the university. 
+        I learned about the process in a class titled Video Game Music.
+        I then used those skills in a couple other classes including actual video game music or songs for class videos.
+      </p>
+      <p>
+        I published all of these on YouTube under the title of “Academic Jams” 
+        and that playlist can be found <a href="https://youtube.com/playlist?list=PL_mrAZNGbNnWcIdsNphgORB9K34nNOHzW">here</a>, 
+          or the individual are available in the provided YouTube frames.
+      </p>
+      <div class="w3-center">
+        <img src="images/jammin.png" class="w3-round w3-image" style="transform: scaleX(-1)" alt="Doodle Jams Left" width="150" height="126">
+        <img src="images/jammin.png" class="w3-round w3-image" alt="Doodle Jams Right" width="150" height="126">
+      </div>
+    </div>
+
+    <div class="w3-col m5 w3-padding-large">
+      <iframe width="384" height="216" src="https://www.youtube.com/embed/Q48tVFTOR-I" title="YouTube Academic Jams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="384" height="216" src="https://www.youtube.com/embed/9alHAt0BHOo" title="YouTube Academic Jams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="w3-center w3-round-large" style="background-color:rgba(148, 219, 255, 0.25);">
+      <iframe width="384" height="216" src="https://www.youtube.com/embed/VE43H85-wlA" title="YouTube Academic Jams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="384" height="216" src="https://www.youtube.com/embed/b58OQX_S2GE" title="YouTube Academic Jams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="384" height="216" src="https://www.youtube.com/embed/NGWatsAY-Rg" title="YouTube Academic Jams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="384" height="216" src="https://www.youtube.com/embed/p1yEgCzFGcI" title="YouTube Academic Jams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="384" height="216" src="https://www.youtube.com/embed/stW50PKzndo" title="YouTube Academic Jams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="384" height="216" src="https://www.youtube.com/embed/jdDsftgnNS4" title="YouTube Academic Jams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <!--Bottom Vid-->
+      <iframe width="384" height="216" src="https://www.youtube.com/embed/eVWAMBQ5sYg" title="YouTube Academic Jams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   </div>
+  </div>
+  <hr>
+
+  <!--Begin Videos-->
+  <div class="w3-row w3-padding-64" id="Videos">
+    <div class="w3-col w3-padding-large w3-large">
+      <h1>Produced Videos</h1>
+      <p>Below are two videos I helped create for different classes. Both are very unique, so they deserve their own descriptions. </p>
+    </div>
+
+    <div class="m6 cust-padding" style="background-color:rgba(148, 219, 255, 0.25);">
+      <table class="w3-table w3-large" >
+        <tr>
+          <td style="text-align: center;"><h2>THE NEWASS NEWSCAST</h2></td>
+          <td style="text-align: center;"><h2>Beowulf The Dragon's Tale</h2></td>
+        </tr>
+        <tr>
+          <td>
+            <div>
+              A college project with the goal of educating a group of students about the kingdom of Assyria. 
+              The goal of the video was to create a unique teaching tool to better explain our research and findings from previously written research papers. 
+              Overall the quality of the video and the content within are pretty good considering it took 2 days to film and 3 days to edit. 
+            </div>
+            <p>
+              My duties in this project included scriptwriting, group organization, film planning, gathering equipment, and editing. 
+            </p>
+            <p>It also features the song <a href="https://youtu.be/eVWAMBQ5sYg" target="_blank" class="w3-large">Bad News</a> which was composed specifically for the ending.</p>
+            <p>[Made in 2021]</p>
+          </td>
+          <td>
+            <div>
+              A Highschool project retelling the events of the final act of Beowulf. 
+              Filmed and edited in the span of a week, it was a relic of its time. 
+              It was made in the span of a week on a free editing software and a green sheet held up by clamps in the basement of my parent’s house. 
+              This project helped inspire my creativity and structural skills to put together a finished project, and although the video isn’t perfect in my eyes, 
+              it was a memorable moment in my life that helped me develop my creativity. 
+            </div>
+            <p>
+              My duties in this project included scriptwriting, group organization, filming, set building, lighting, gathering equipment, and editing.  
+            </p>
+            <p>[Made in 2019]</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: middle; align-items:center">
+            <iframe width="384" height="216" src="https://www.youtube.com/embed/TSb5WtHZ1yY" title="Cringe YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </td>
+          <td>
+            <iframe width="384" height="216" src="https://www.youtube.com/embed/NUqggv7_-ls" title="Cringe YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <hr>
+
+  <div class="w3-row w3-padding-64" id="Db">
+    <div class="w3-col w3-padding-large w3-large">
+      <h1>Database Work</h1>
+      <p>I’ve worked with databases a considerable amount and enjoy charting Entity Relationship (ER) diagrams. </p>
+    </div>
+    <div>
+      <table class="w3-hide-small">
+        <tr>
+          <td>
+            <img src="images/db_00.PNG" class="w3-round-large w3-image-border" alt="Database ER Diagram">
+          </td>
+          <td>
+            <img src="images/db_02.PNG" class="w3-round-large w3-image-border" alt="Database ER Diagram">
+          </td>
+        </tr>
+      </table>
+      <img src="images/db_01.PNG" class="w3-round-large w3-image-border" alt="Database ER Diagram">
+    </div>
+    <p class="w3-large">
+      I also know at least the basics of SQL including creating and merging tables. 
+    </p>
+  </div>
+  <hr>
+
+  <!--Begin HTML-->
+  <div class="w3-row w3-padding-64" id="web">
+    <div class="w3-col m6 w3-padding-large w3-large">
+      <h1>HTML Pages</h1>
+      <p>HTML and JavaScript were some of the first programming languages I worked in and therefore have a soft spot in my heart for housing some of my earliest programs. 
+        The language is very versatile in many aspects, and I still recommend it for those looking for a place to start. 
+      </p>
+      <p>
+        Here are some webpages I programmed that I find significant of presenting despite them being from a time when I had not yet developed many skills and techniques of programming.
+      </p>
+      <p>
+        Please note that the purpose of these websites was not to create aesthetically pleasing webpages, but rather to use math, logic, and problem solving to complete a task. 
+      </p>
+
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <table class="w3-table" border="1px" style="background-color:rgba(148, 219, 255, 0.25);">
+        <tr>
+          <td style="vertical-align: middle;">
+            <a href="Bird Quiz.html" target="_blank" class="w3-large">Bird Project</a>
+          </td>
+          <td style="vertical-align: middle;">
+            <a href="Bird Quiz.html" target="_blank"><img src="images/prv_bird.PNG" class="w3-round-large w3-image-border" alt="Bird Project Webpage Preview"></a>
+          </td>
+          <td class="w3-text-grey" style="vertical-align: middle;">
+            <div>A personal project I started working on my second semester of college. 
+              I made the website to help me learn the different species of backyard birds found in the Wisconsin area. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: middle;">
+            <a href="GuessGame_js.html" target="_blank" class="w3-large">Number Guesser (Binary Search)</a>
+          </td>
+          <td style="vertical-align: middle;">
+            <a href="GuessGame_js.html" target="_blank"><img src="images/prv_guess.PNG" class="w3-round-large w3-image-border" alt="Bird Project Webpage Preview"></a>
+          </td>
+          <td class="w3-text-grey" style="vertical-align: middle;">
+            <div>A project for one of my first classes that involved finding a number through a binary search method 
+              to optimally find numbers by splitting the amount of places to search in half. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: middle;">
+            <a href="strings.html" target="_blank" class="w3-large">Text Manipulator</a>
+          </td>
+          <td style="vertical-align: middle;">
+            <a href="strings.html" target="_blank"><img src="images/prv_text.PNG" class="w3-round-large w3-image-border" alt="Bird Project Webpage Preview"></a>
+          </td>
+          <td class="w3-text-grey" style="vertical-align: middle;">
+            <div>
+              A small side project to help me better understand methods attached to strings. Complete with input, output, and log. 
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+<!-- End page content -->
+</div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center site-footer">
+  <hr>
+  <div>
+  <p>This website is based off of a template from 
+      <a href="https://www.w3schools.com/" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3schools.com</a>.
+      Specifically their css file was super helpful because I really didn't know that much about CSS before making this
+      <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
+  </p>
+  <table class="w3-table">
+    <tr>
+        <td style="text-align: center;"></td>
+
+        <td style="text-align: center;">
+          <div>Daniel Haller</div>
+          <div><u><i>danielhallercs@gmail.com</i></u></div>
+          <div>©2023</div>
+
+          
+        </td>
+
+        <td style="text-align: center;"></td>
+
+    </tr>
+  </table>
+  </div>
+</footer>
+</body>
+</html>
