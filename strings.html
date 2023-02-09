@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head><title>Text Manipulator</title></head>
+<body onload="log = '[begin log]'; sw = 0; n = 0; old = 0;"> 
+<script type="text/javascript">
+function cvrt() {
+c = document.getElementById('pad').value;
+str = document.getElementById('inp').value;
+document.getElementById('outp').value=c +' '+str;
+<!-- document.getElementById('debug').innerHTML=c+ ' '+str+' '+log+' '+sw; -->
+if (c == 1) {
+n = document.getElementById('outp').value="Please select an option";
+} else if (c == 2) {
+n = str.toUpperCase();
+document.getElementById('outp').value=n;
+} else if (c == 3) {
+n = str.toLowerCase();
+} else if (c == 4) {
+n = str.replace(/ /g, "");
+} else {
+n = "Congrats! You Broke Me";
+}
+document.getElementById('outp').value=n;
+old = log;
+log = n+' <br>'+old;
+
+if (sw == 1) { document.getElementById('logon').innerHTML=log;
+}}
+
+function logswitch() {
+if (sw == 0) {
+sw = 1;
+document.getElementById('swt').value="Hide Log"
+document.getElementById('logon').innerHTML=log;
+} else if (sw == 1) {
+sw = 0;
+document.getElementById('swt').value="Show Log"
+document.getElementById('logon').innerHTML="";
+}
+}
+</script>
+<!-- <table border="5" style="width: 600px; height: 550px;"> <tr> <td> -->
+<h2>Text Manipulator</h2>
+<div>
+Select: <br>
+<select id="pad"> 
+<option value="1">-- Select an Option --</option>
+<option value="2">ALL CAPS</option>
+<option value="3">all lower</option>
+<option value="4">Remove Spaces</option>
+</select> <button onclick="cvrt();">Convert</button><br><br>
+</div>
+
+<div>
+Input: <br>
+<textarea style="width: 550px; height: 135px;" id="inp"></textarea>
+</div> 
+<br>
+<div>
+Output: <br>
+<textarea style="width: 550px; height: 135px;" id="outp">Please select an option</textarea> <br>
+</div> <br>
+<!-- <div id="debug">/div> <br> -->
+<input type="button" id='swt' value="Show Log"onclick="logswitch();">
+<div id="logon"></div>
+<!-- <button onclick="document.getElementById('ldebug').innerHTML=log+' '+sw+' '+n+' '+old;">Debug</button> -->
+<!-- <div id="ldebug">ld</div> -->
+<!-- </td></tr></table> -->
+
+
+
+
+</body>
+</html>

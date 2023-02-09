@@ -1,35 +1,226 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head> <title> -_- Daniel-Haller -_- </title> </head>
-<body style="background-color:#22343D;color:snow">
-<table style="margin-left:auto;margin-right:auto;"> 
-<tr><td> 
-	<img src='^~^.png'>
-</td><td>
-<div style="text-align:center">
-	<h2>Welcome to my Website</h2>
-	<p> Here I post certain projects and code I've made to help others. <br> Hope you enjoy! ^~^ </p>
-</div>
-</td><td>
-	<img src='^~^.png'>
-</td></tr>
-<tr><td>
-<div><h3>Website Pages:</h3>
- <a href="Classwork_GuessGame_js.html" style="color: #00c1ff" target="_blank">Number Guesser</a> 
-</div>
-</td> <td>
-<div style="text-align:center">
-<h3>Something Wrong?</h3>
-<p>Contact me at <i>halldj07@uwgb.edu</i></p>
-</div>
-</td><td>
-<div style="text-align:center">
+<head>
+<title>Daniel Haller Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="icon" type="image/x-icon" href="images/pikah.png">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body style="background-color:rgb(241, 241, 241);">
 
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Daniel Haller Portfolio <b>|</b></a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#programming" class="w3-bar-item w3-button">Programming</a>
+      <a href="#prj1" class="w3-bar-item w3-button">Featured Project</a>
+      <a href="projects.html" class="w3-bar-item w3-button">Other Projects</a>
+    </div>
+  </div>
 </div>
-</td></tr>
-</table>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px;background-color:rgba(148, 219, 255, 0.25);" id="home">
+  <img class="w3-image" src="images/head.png" alt="Interesting Header Image" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <!--h1 class="w3-xxlarge">Le Placeholder</h1-->
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small" style="background-color:rgba(148, 219, 255, 0.25);">
+     <img src="images/^~^.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Me</h1><br>
+      <!--<h5 class="w3-center">Yes this is based off of a template, I don't program in web formats very much</h5>-->
+      <p class="w3-large">My name is Daniel Haller, I am a software engineer from Green Bay that loves working on complex and interesting projects. 
+        I am also a lifelong learner and love sharing my findings with other people. 
+        On this page you will find some of my prior projects I've either lead or have been involved with.</p>
+      <p class="w3-large">The easiest way to contact me is through my email: <i><u>danielhallercs@gmail.com</u></i></p>
+
+      <h2 class="w3-center">Degrees</h2>
+      <p class="w3-large">As of now, I am finishing up college with 2 bachelor’s degrees from the University of Wisconsin – Green Bay: </p>
+          <ul class="w3-large">
+            <li>Computer Science with an emphasis in Software Engineering </li>
+            <li>Information Sciences with an emphasis in Game Studies. </li>
+          </ul>
+      <p class="w3-large">
+        I’m on track to complete my degrees and college in Spring of 2023
+      </p>
+
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Programming Section -->
+  <div class="w3-row w3-padding-64" id="programming" style="max-width:1100px; align-items: center;">
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Programming</h1><br>
+      <p class="w3-text-grey">I’ve been fascinated with programming since I took a programming class in high school. 
+        From that point onward, I’ve continuously evolved and developed my skills to feature a variety of languages. 
+        Through my degree I’ve learned about the processes and uses of object-oriented programming and many of the design patterns that can be incorporated. 
+      </p><br>
+
+      <h4>Java - 4+ Years</h4>
+      <p class="w3-text-grey">I started programming in Java when I began attending college at the University of Wisconsin – Green Bay. 
+        This language was my first object oriented programming languages and is a great basis for other languages I have learned or will learn in the future.</p><br>
+    
+      <h4>C++ - 2+ Years</h4>
+      <p class="w3-text-grey">I loved learning about this language after I had a grasp on computer architecture and design. 
+        I love programming in this language because of the parallels to computer hardware which is an interest of mine. 
+        My <a href="#prj1">Featured Project</a> is also mainly programmed in C++.</p><br>
+    
+      <h4>Python - 2+ Years</h4>
+      <p class="w3-text-grey">I’ve done quite a few projects using python for a variety of subjects include Data Mining and Artificial Intelligence. 
+        With python, I’ve used many popular libraries such as Numpy, Pandas, SciKit-learn, TensorFlow, matplotlib, and seaborn.</p><br>
+    
+      <h4>Other Languages - ~1 Year</h4>
+      <p class="w3-text-grey">C#, SQL, HTML and JavaScript</p>
+      <p class="w3-text-grey">If you're looking for specific applications of my skills, check out <a href="#prj2">Other Projects</a></p>
+      <p class="w3-text-grey">I don't have much web experience so if you're curious about this website that's on the footer of this page</p>    
+    </div>
+    
+    <div class="w3-col m6 cust-padding w3-hide-small">
+      <img src="images/pfp.png" class="w3-round w3-image" alt="Menu" style="width:100%">
+      <img src="images/burden.png" class="w3-round w3-image" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Featured Project -->
+  <div class="w3-row w3-padding-64" id="prj1">
+    <div class="w3-col m6 cust-padding w3-hide-small" style="background-color:rgba(148, 219, 255, 0.25);">
+      <img src="images/ast_00.png" class="w3-round-large w3-image-border" alt="Intro Screen of Featured Project" width="600"> <hr>
+      <img src="images/ast_01.png" class="w3-round-large w3-image-border" alt="Gameplay Screen of Featured Project" width="600"> <hr>
+      <img src="images/ast_02.png" class="w3-round-large w3-image-border" alt="Game Over Screen of Featured Project" width="600">
+    </div>
+
+    <div class="w3-col m6 w3-padding-small">
+    <h1>Featured Project:<br><span style="font-family:Courier">Asteroids</span></h1>
+    <p class="w3-large">This project was part of a venture into the processes and structures of Software Engineering and the capstone of the Software Engineering major. 
+    I worked with a team of 2 other students to research and develop a functional game that created graphics directly through OpenGL to be simple and portable. </p>
+    <p class="w3-large">Our project’s goal was to develop the fundamental aspects of a game engine that could be modified and repurposed in other projects and experiments, 
+    and to create our game without as few external tools and platform dependent elements as possible.</p>
+    <p class="w3-large">This project was created in the span of 3 months with much of the earlier work involving planning and researching what our goals of the project would be. 
+    This project was planned and executed according to a plan with changes to the plan developing as needed. We developed documents such as:</p>
+    <p>
+      <ul class="w3-large">    
+        <li>Project Proposal</li>
+        <li>Task Report</li>
+        <li>Test Plan</li>
+        <li>Progress Reports</li>
+      </ul>
+    </p>
+    <p class="w3-large">
+      The project consists of a complete game including a start screen, gameplay, pause screen, and game over screen. 
+      Inside the game the player can move their ship around and shoot asteroids that spawn in waves around the player. 
+      When the player shoots those asteroids, they break into smaller asteroids that must be shot again. 
+      The asteroids have 3 sizes with the smallest size destroying the asteroid entirely without spawning a new asteroid, as the waves progress, more asteroids spawn.</p>
+    <p class="w3-large">
+      Some of my specific tasks included:
+    </p>
+    <p>
+      <ul class="w3-large">    
+        <li>Creating the gun that fires from the spaceship</li>
+        <li>Creating meteors and managing them during gameplay</li>
+        <li>Creating the text, textures, and menus in the game </li>
+        <li>Linking project resources and dependencies</li>
+      </ul>
+    </p>
+    <p class="w3-large">
+      Although team members were given specific tasks, we often helped each other through lending our knowledge or discoveries on certain tasks. 
+      We also provided resources and ideas for the other team members when they needed help. 
+    </p>
+    </div>
+    </div>
+
+    <!--
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  -->
+<hr>
+
+  <!--  Other Projects-->
+  <div class="w3-container w3-padding-64" id="prj2">
+    <div class="w3-col m6 w3-padding-large" style="align-items: center;">
+      <h1>Other Projects</h1>
+      <p class="w3-large">I have worked on projects in a variety of disciplines and love tackling new challenges</p>
+    </div>
+    <div class="w3-col m6 cust-padding" style="background-color:rgba(148, 219, 255, 0.25);">
+      <table class="w3-table w3-padding-large" border="1px"  style="background-color:rgba(148, 219, 255, 0.25);">
+        <tr>
+          <td><a href="projects.html#Java" class="w3-button2">Java Checkers</a></td>
+          <td><a href="projects.html#AI" class="w3-button2">Data Analysis</a></td>
+          <td><a href="projects.html#Games" class="w3-button2">Game Development</a></td>
+          <td><a href="projects.html#Music" class="w3-button2">Produced Music</a></td>
+        </tr>
+        <tr>
+          <td><a href="projects.html#Videos" class="w3-button2">Produced Videos</a></td>
+          <td><a href="projects.html#Db" class="w3-button2">Database Work</a></td>
+          <td><a href="projects.html#web" class="w3-button2">HTML Pages</a></td>
+          <td><a href="index.html" class="w3-button2">This Website</a></td>
+        </tr>
+
+      </table>
+    </div>
+
+  </div>
+  
+<!-- End page content -->
+</div>
+</div>
 
 
+<hr>
+<!-- Footer -->
+<footer class="w3-center site-footer">
+  <div>
+  <p>This website is based off of a template from 
+      <a href="https://www.w3schools.com/" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3schools.com</a>.
+      Specifically their css file was super helpful because I really didn't know that much about CSS before making this
+      <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
+  </p>
+  <table class="w3-table">
+    <tr>
+        <td style="text-align: center;"></td>
 
+        <td style="text-align: center;">
+          <div>Daniel Haller</div>
+          <div><u><i>danielhallercs@gmail.com</i></u></div>
+          <div>©2023</div>
+
+          
+        </td>
+
+        <td style="text-align: center;"></td>
+
+    </tr>
+  </table>
+  </div>
+</footer>
 </body>
 </html>

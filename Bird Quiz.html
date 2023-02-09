@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<script type="text/javascript">
+var bird = 1;
+var birdnum = 1;
+var sw = 0;
+var srk = 0;
+var count = 0;
+var temp = 0;
+var birdnames = ["Black-capped Chickadee", "American Goldfinch Male", "American Goldfinch Female", "House Finch Male", "House Finch Female", "Purple Finch Male", "Purple Finch Female", "Red-bellied Woodpecker",
+"Downy Woodpecker", "Hairy Woodpecker", "Pileated Woodpecker", "Blue Jay", "Red-breasted Nuthatch", "White-breasted Nutchatch", "Dark-eyed Junco", "House Sparrow Male", "House Sparrow Female", "Red-winged Blackbird Male",
+"Red-winged Blackbird Female", "Brown-headed Cowbird Male", "Brown-headed Cowbird Female", "Common Grackle Male", "Common Grackle Female", "European Starling " ];
+/*
+var b1 = "Black-capped Chickadee";
+var b2 = "American Goldfinch Male";
+var b3 = "American Goldfinch Female";
+var b4 = "House Finch Male";
+var b5 = "House Finch Female";
+var b6 = "Purple Finch Male";
+var b7 = "Purple Finch Female";
+var b8 = "Red-bellied Woodpecker";
+var b9 = "Downy Woodpecker";
+var b10 = "Hairy Woodpecker";
+var b11 = "Pileated Woodpecker";
+var b12 = "Blue Jay";
+var b13 = "Red-breasted Nuthatch";
+var b14 = "White-breasted Nutchatch";
+var b15 = "Dark-eyed Junco";
+var b16 = "House Sparrow Male";
+var b17 = "House Sparrow Female";
+var b18 = "Red-winged Blackbird Male";
+var b19 = "Red-winged Blackbird Female";
+var b20 = "Brown-headed Cowbird Male";
+var b21 = "Brown-headed Cowbird Female";
+var b22 = "Common Grackle Male";
+var b23 = "Common Grackle Female";
+var b24 = "European Starling ";
+*/
+function RandomBird() {
+bird = Math.ceil(Math.random() * 24);
+
+document.getElementById('out').src="images/bp/bird_"+bird+".jpg";
+document.getElementById('results').innerHTML="";
+}
+function NextBird() {
+bird++;
+if (bird > 24) { bird = 1; }
+
+document.getElementById('out').src="images/bp/bird_"+bird+".jpg";
+document.getElementById('results').innerHTML="";
+}
+function PriorBird() {
+bird--;
+if (bird < 1) { bird = 24; }
+
+document.getElementById('out').src="images/bp/bird_"+bird+".jpg";
+document.getElementById('results').innerHTML="";
+}
+function Guess(g) {
+if (g == bird) {
+document.getElementById('results').innerHTML="Correct";
+if (temp != bird) { srk++; count++; document.getElementById('streak').innerHTML="Streak: "+srk; document.getElementById('score').innerHTML="Total Correct: " + count}
+else { document.getElementById('results').innerHTML="Click next bird" }
+temp = bird;
+} else {
+document.getElementById('results').innerHTML="Incorrect, The answer was actually: "+birdnames[bird-1];
+srk = 0;
+document.getElementById('streak').innerHTML="Streak: "+srk;
+temp = bird;
+}
+
+}
+</script>
+
+<head> <title>Wisconsin Backyard Bird Quiz</title> </head>
+<body>
+
+<table style="margin-left:auto;margin-right:auto;" border="20"> 
+<tr> <td> <div style="text-align:center" id="streak">Streak: 0</div> </td> <td> <div style="text-align:center" id="score"> Total Correct: 0 </div> </td> </tr>
+</table>
+<hr>
+
+<div style="text-align:center">
+<img id="out" src="images/bp/bird_1.jpg" HEIGHT="600" WIDTH="800">
+<hr>
+<!-- <div id="num">1</div> -->
+<button onclick="PriorBird()">Previous Bird</button>
+<button onclick="RandomBird();">Random Bird</button>
+<button onclick="NextBird();">Next Bird</button> <br>
+<button onclick="Guess(1);">Black-capped Chickadee</button>
+<button onclick="Guess(2);">American Goldfinch Male</button>
+<button onclick="Guess(3);">American Goldfinch Female</button>
+<button onclick="Guess(4);">House Finch Male</button>
+<button onclick="Guess(5);">House Finch Female</button>
+<button onclick="Guess(6);">Purple Finch Male</button>
+<button onclick="Guess(7);">Purple Finch Female</button>
+<button onclick="Guess(8);">Red-bellied Woodpecker</button>
+<button onclick="Guess(9);">Downy Woodpecker</button>
+<button onclick="Guess(10);">Hairy Woodpecker</button>
+<button onclick="Guess(11);">Pileated Woodpecker</button>
+<button onclick="Guess(12);">Blue Jay</button>
+<button onclick="Guess(13);">Red-breasted Nuthatch</button>
+<button onclick="Guess(14);">White-breasted Nutchatch</button>
+<button onclick="Guess(15);">Dark-eyed Junco</button>
+<button onclick="Guess(16);">House Sparrow Male</button>
+<button onclick="Guess(17);">House Sparrow Female</button>
+<button onclick="Guess(18);">Red-winged Blackbird Male</button>
+<button onclick="Guess(19);">Red-winged Blackbird Female</button>
+<button onclick="Guess(20);">Brown-headed Cowbird Male</button>
+<button onclick="Guess(21);">Brown-headed Cowbird Female</button>
+<button onclick="Guess(22);">Common Grackle Male</button>
+<button onclick="Guess(23);">Common Grackle Female</button>
+<button onclick="Guess(24);">European Starling</button>
+
+
+
+<div id="results"></div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
