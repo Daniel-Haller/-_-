@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
       <a href="#AI" class="w3-bar-item w3-button">Data Analysis</a>
       <a href="#Games" class="w3-bar-item w3-button">Video Games</a>
       <a href="#3dModels" class="w3-bar-item w3-button">3D Models</a>
+      <a href="#diff" class="w3-bar-item w3-button">Image Generation</a>
       <a href="#Music" class="w3-bar-item w3-button">Music</a>
       <a href="#Videos" class="w3-bar-item w3-button">Videos</a>
       <a href="#Db" class="w3-bar-item w3-button">Databases</a>
@@ -48,28 +49,29 @@ h1, h2, h3, h4, h5, h6 {
 <div class="w3-content" style="max-width:1100px">
 
   <!-- Intro -->
-  <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m7 w3-padding-large">
-      <p><h1>Guide</h1></p>
-      <table class="w3-table w3-padding-large" border="1px"  style="background-color:rgba(148, 219, 255, 0.25);">
-        <tr>
-          <td><a href="#Java" class="w3-button2">Java Checkers</a></td>
-          <td><a href="#AI" class="w3-button2">Data Analysis</a></td>
-          <td><a href="#Games" class="w3-button2">Game Development</a></td>
-          <td><a href="#3dModels" class="w3-button2">3D Models</a></td>
-        </tr>
-        <tr>
-          <td><a href="#Music" class="w3-button2">Produced Music</a></td>
-          <td><a href="#Videos" class="w3-button2">Produced Videos</a></td>
-          <td><a href="#Db" class="w3-button2">Database Work</a></td>
-          <td><a href="#web" class="w3-button2">HTML Pages</a></td>
-        </tr>
+  <div class="w3-row w3-padding-64">
+    <div class="w3-col m6 cust-padding">
+      <div><h1>Guide</h1></div>
+      <div class="m6 cust-padding" style="background-color:rgba(148, 219, 255, 0.25);">
+      <div class="w3-padding-large" border="1px"  style="background-color:rgba(148, 219, 255, 0.25);">
+        
+          <a href="#Java" class="w3-button2">Java Checkers</a>
+          <a href="#AI" class="w3-button2">Data Analysis</a>
+          <a href="#Games" class="w3-button2">Game Development</a>
+          <a href="#3dModels" class="w3-button2">3D Models</a>
+          <a href="#diff" class="w3-button2">Image Generation</a>
+          <a href="#Music" class="w3-button2">Produced Music</a>
+          <a href="#Videos" class="w3-button2">Produced Videos</a>
+          <a href="#Db" class="w3-button2">Database Work</a>
+          <a href="#web" class="w3-button2">HTML Pages</a>
 
-      </table>
+          </div>
+      </div>
     </div>
 
-    <div class="w3-col m4 w3-padding-large">
+    <div class="w3-col m6 w3-padding-large">
       <!--<h5 class="w3-center">Yes this is based off of a template, I don't program in web formats very much</h5>-->
+      <br><br><br>
       <div class="w3-large">I consider myself somewhat of a pocketknife in terms of my skills. 
         By that, I mean my skillset is well rounded in a variety of fields. 
         I love working on different projects, and that often leads me to pickup new skills in the process. 
@@ -369,6 +371,49 @@ h1, h2, h3, h4, h5, h6 {
 
   <hr>
 
+
+  <!--Begin StableDiffusion-->
+  <div class="w3-container w3-padding-64" id="diff">
+    <div class="w3-padding-large w3-row">
+      <div class="w3-col m6 cust-padding w3-hide-small">
+        <br>
+        <img src="images/banette_sd.png" class="w3-round w3-image" alt="Stable Diffusion Banette">
+        <div>I trained a LoRA to generate the character Banette from the Pokémon franchise. 
+          I did this because I wanted to learn more about the process of training, and because Banette is my favorite Pokémon. 
+          I put together the dataset using a combination of scripts and hand picked images, as well as scripted tags which I then modified to further increase the accuracy of the tags. </div>
+      </div>
+      <div class="w3-col w3-large m6 cust-padding">
+      <h2>Photo Generation using Stable Diffusion</h2>
+        <p>
+          I’ve always been interested in AI generated photos and how they work. 
+          This project helped me connect how an AI can train off of an image-set and manipulating that dataset can affect the final product. 
+          Stable Diffusion is an open source image generation model that uses deep learning to turn text based prompts into images. 
+          It uses a variety of models trained off of different image-sets, and has tons of flexibilities to allow for even more customization of the images. 
+          One of these extension is a LoRA which stands for “Low-Rank Adaptation”. 
+          The goal of a LoRA is further train a model for a more specific task instead of generating images for multiple possible situations. 
+          I trained a LoRA to generate the character Banette from the Pokémon franchise. 
+          I did this because I wanted to learn more about the process of training, and because Banette is my favorite Pokémon. 
+        </p>
+        <p>
+          &nbsp; Link to LoRA: <a href="https://civitai.com/models/182515" target="_blank">https://civitai.com/models/182515</a><br>
+        </p>
+        <p>
+          To run this LoRA file, you need a way to run stable diffusion. 
+          If you want to run it locally on your computer, I recommend using 
+          <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank">stable-diffusion-WebUI</a>
+          and getting the model 
+          <a href="https://civitai.com/models/95655/purrfectmergev1" target="_blank">PurrfectMerge_v1.</a>
+          Other models will work, but this is the main model I used for testing. 
+        </p>
+        <div>
+          Otherwise, there's many online stable diffusion sites that allow for LoRA integration. The main one I use and enjoy is 
+          <a href="https://dezgo.com/txt2img"  target="_blank">https://dezgo.com</a>. 
+          On that site, click more options and follow the instructions for adding a LoRA, there’s a couple models that work on the site so if you have some time to kill go wild.
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
   <!--Begin Music-->
   <div class="w3-row w3-padding-64" id="Music">
     <div class="w3-col m7 w3-padding-large w3-large">
