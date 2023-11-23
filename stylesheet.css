@@ -253,3 +253,15 @@ hr{border:0;border-top:1px solid rgb(0, 0, 0);margin:20px 0}
 .hovContainer:hover .image{opacity: 0.3; background-color: #2196F3;}
 .hovContainer:hover .hovContainerMiddle{opacity: 1;}
 .hovText{padding: 16px 32px;}
+
+div.scroll-container {
+  background-color: #a8a1a1;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  min-width: 450px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
